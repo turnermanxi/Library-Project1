@@ -1,0 +1,51 @@
+:root {
+    --my-red: rgb(141, 5, 5);
+}
+
+.container {
+    background-color: black;
+    color: var(--my-red);
+    border: 2px solid var(--my-red);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    right: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(4, 2fr);
+}
+
+header {
+    background-color: var(--my-red);
+    color: white;
+    box-shadow: 10px 10px 10px red;
+    position: absolute;
+    align-items: left;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.saved-library {
+    margin-bottom: 100%;
+    position: relative;
+    bottom: -20%;
+    text-align: left;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+
+
+#adbtn {
+    align-self: left;
+    font-size: 25px;
+    
+}
+

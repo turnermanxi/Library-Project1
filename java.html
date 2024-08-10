@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="java.css">
+    <script src="java.js" defer></script>
+</head>
+
+
+<body>
+    <div class="header1">
+        <header>
+            <p>My Library</p>
+            <button type="button" id="dialogBtn">Add Book</button>
+        </header>
+    </div>
+
+    <dialog id="dialogBox">
+
+        <div class="formPart">
+            <form action="" method ="post" id="inputForm">
+                <input type="text" id="title" name="title" placeholder="Title" maxlength="12" required>
+                
+                <input type="text" id="author" name="author" placeholder="Author" minlength="3" maxlength="16" required>
+                
+                <input type="number" id="pages" name="pages" placeholder="Pages" minlength="1" required>
+                
+                <fieldset>
+                    <legend>Did you Read it</legend>
+                        <label for="readYes">Yes</label>
+                        <input type="radio" id="read" name="read-status" value="read" checked>
+
+                        <label for="readNo">No</label>
+                        <input type="radio" id="readNo" name="read-status" value="not read">
+                </fieldset>
+
+                <div class="dialogBtn">
+                    <button type="submit" id="confirmBtn">Confirm</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+    </dialog>
+
+    <div class="saved-library">
+        <p>Our Books</p>
+        <div class="container">
+            <div class="books"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
